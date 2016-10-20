@@ -3,10 +3,8 @@ $(document).ready(function(){
 		var curScroll = $("#menu").scrollLeft();
 		if(e.originalEvent.wheelDelta > 0) {
 			$("#menu").scrollLeft(curScroll-1936);
-			console.log(curScroll);
 		} else {
 			$("#menu").scrollLeft(curScroll+1936);
-			console.log(curScroll);
 		}
 	});
 
@@ -28,6 +26,7 @@ $(document).ready(function(){
 
 	$(".system-menu").click(function(){
 		$("#container").toggleClass("active");
-		$('#' + $(this).data('info')).toggleClass("active");
+		$("#games").fadeToggle(300);
+		$("#games").toggleClass("active");
 	});
 });

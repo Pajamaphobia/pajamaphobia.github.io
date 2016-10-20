@@ -60,17 +60,18 @@ html, body {
 	margin: 0;
 }
 
+
 #games {
 	display: none;
 	position:relative;
-	transition: top 1s;
-	top: 0px;
 	left:34%;
-	padding-top: 200px;
+	padding-top: 100px;
 }
-#games.active {top: 160px;}
+#games.active { display: block; }
+
 
 div[id^="console-"] {
+	z-index:-1;
 	text-align: left;
 	color: #ccc;
 }
