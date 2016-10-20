@@ -28,5 +28,6 @@ $(document).ready(function(){
 		$("#container").toggleClass("active");
 		$("#games").fadeToggle(300);
 		$("#games").toggleClass("active");
+		console.log("shift!")
 	});
 });

@@ -42,19 +42,20 @@ html, body {
 
 #menu {
 	position: absolute;
-	padding-top: 50px;
+
 	background-color: #BF1E1E;
 	width: 1920px;
-	height: 160px;
-	
+	height: 170px;
 	white-space: nowrap;
 	overflow-x: scroll;
 	user-select: none;
 	-webkit-user-select: none;
 }
+#menu img { padding-top: 50px; }
 .system-menu {
 	display: inline-block;
 	width: 1920px;
+	height: 130px;
 	text-align: center;
 	padding: 0;
 	margin: 0;
