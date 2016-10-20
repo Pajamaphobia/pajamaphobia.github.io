@@ -30,4 +30,31 @@ $(document).ready(function(){
 		$("#games").toggleClass("active");
 		console.log("shift!")
 	});
+
+	document.onkeydown = function(e) {
+		console.log("keypressed!");
+		var box = $("#menu");
+		switch (e.keyCode) {
+			case 37:
+				console.log("left!");
+				var x = (1936) - box.scrollLeft();
+				box.animate({ scrollLeft: -x })
+				break;
+			case 39:
+				console.log("right!");
+				var x = (1936) + box.scrollLeft();
+				box.animate({ scrollLeft: x })
+				break;
+			case 38:
+				$("#container").toggleClass("active");
+				$("#games").fadeToggle(300);
+				$("#games").toggleClass("active");
+				break;
+			case 40:
+				$("#container").removeClass("active");
+				$("#games").fadeOut(300);
+				$("#games").removeClass("active");
+				break;
+		}
+	}
 });

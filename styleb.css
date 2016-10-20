@@ -39,7 +39,6 @@ html, body {
 .scrollLeft { float: left; }
 .scrollRight { float: right; }
 
-
 #menu {
 	position: absolute;
 
@@ -69,7 +68,6 @@ html, body {
 	padding-top: 100px;
 }
 #games.active { display: block; }
-
 
 div[id^="console-"] {
 	z-index:-1;
