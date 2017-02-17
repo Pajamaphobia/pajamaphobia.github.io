@@ -44,6 +44,7 @@ window.addEventListener("keydown", (function(canMove) {
     	case 39:
 			var x = (1936) + $("#menu").scrollLeft();
 			$("#menu").animate({ scrollLeft: +x })
+			console.log("new test!")
 			break;
     	case 38:
 			$("#container").toggleClass("active");
