@@ -31,9 +31,42 @@ $(document).ready(function(){
 		console.log("shift!")
 	});
 
+window.addEventListener("keydown", (function(canMove) {
+  return function(event) {
+    if (!canMove) return false;
+    canMove = false;
+    setTimeout(function() { canMove = true; }, 400);
+    switch (event.keyCode) {
+		case 37:
+			var x = (1936) - $("#menu").scrollLeft();
+			$("#menu").animate({ scrollLeft: -x })
+			break;
+    	case 39:
+			var x = (1936) + $("#menu").scrollLeft();
+			$("#menu").animate({ scrollLeft: +x })
+			break;
+    	case 38:
+			$("#container").toggleClass("active");
+			$("#games").fadeToggle(300);
+			$("#games").toggleClass("active");
+			break;
+		case 40:
+			$("#container").removeClass("active");
+			$("#games").fadeOut(300);
+			$("#games").removeClass("active");
+			break;		
+    }  
+  };
+})(true), false);
+
+
+
+/*
 	document.onkeydown = function(e) {
 		console.log("keypressed!");
 		var box = $("#menu");
+		var canMove = false;
+		setTimeout(function() { canMove = true; }, 250);
 		switch (e.keyCode) {
 			case 37:
 				console.log("left!");
@@ -42,8 +75,11 @@ $(document).ready(function(){
 				break;
 			case 39:
 				console.log("right!");
-				var x = (1936) + box.scrollLeft();
-				box.animate({ scrollLeft: x })
+				clearTimeout(scrolling);
+				scrolling = setTimeout(function(){
+					var x = (1936) + box.scrollLeft();
+					box.animate({ scrollLeft: x })
+				}, x);
 				break;
 			case 38:
 				$("#container").toggleClass("active");
@@ -56,5 +92,5 @@ $(document).ready(function(){
 				$("#games").removeClass("active");
 				break;
 		}
-	}
+	}*/
 });
