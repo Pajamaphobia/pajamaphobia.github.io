@@ -1,0 +1,20 @@
+[
+    { "systemName":"Atari-2600", "systemImage":"images/a2600.png" },
+    { "systemName":"Atari-7800", "systemImage":"images/a7800.png" },
+    { "systemName":"NES", "systemImage":"images/nes.png" },
+    { "systemName":"SNES", "systemImage":"images/snes.png" },
+    { "systemName":"N64", "systemImage":"images/n64.png" },
+    { "systemName":"GameCube", "systemImage":"images/gamecube.png" },
+    { "systemName":"Wii", "systemImage":"images/wii.png" },
+    { "systemName":"GB", "systemImage":"images/gameboy.png" },
+    { "systemName":"GBA", "systemImage":"images/gba.png" },
+    { "systemName":"DS", "systemImage":"images/ds.png" },
+    { "systemName":"Genesis", "systemImage":"images/genesis.png" },
+    { "systemName":"Saturn", "systemImage":"images/saturn.png" },
+    { "systemName":"Dreamcast", "systemImage":"images/dreamcast.png" },
+    { "systemName":"PSX", "systemImage":"images/psx.png" },
+    { "systemName":"PS2", "systemImage":"images/ps2.png" },
+    { "systemName":"PSP", "systemImage":"images/psp.png" },
+    { "systemName":"TurboGrafx", "systemImage":"images/turbografx.png" },
+    { "systemName":"Mame", "systemImage":"images/mame.png" }
+]

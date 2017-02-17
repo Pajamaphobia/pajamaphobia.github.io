@@ -1,0 +1,17 @@
+{
+    "Atari-2600":[
+        { "gameName": "Asteroids" },
+        { "gameName": "Breakout - Breakaway IV" },
+        { "gameName": "BurgerTime" },
+        { "gameName": "Centipede" },
+        { "gameName": "Dig Dug" },
+        { "gameName": "Donkey Kong Junior" },
+        { "gameName": "Donkey Kong" },
+        { "gameName": "Frogger" },
+        { "gameName": "Galaxian" },
+        { "gameName": "Joust" },
+        { "gameName": "Pac-Man" },
+        { "gameName": "Pitfall! - Pitfall Harry's Jungle Adventure" },
+        { "gameName": "Space Invaders" }
+    ]
+}
