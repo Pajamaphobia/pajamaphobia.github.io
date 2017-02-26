@@ -12,6 +12,7 @@ function getQueryVariable(variable)
 function getRuinerGif()
 {
     var gif = getQueryVariable("gif");
-
-    document.getElementById('animation-gif-layer').style.backgroundImage = gif;
+    document.getElementById('animation-gif-layer').style.backgroundImage = "url('"+gif+"')";
 }
+
+window.onload = getRuinerGif;
