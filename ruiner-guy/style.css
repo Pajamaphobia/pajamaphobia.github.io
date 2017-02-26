@@ -1,35 +1,42 @@
 body { background-color: #111; }
 
 #container {
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #animation-bg{
     border-style: solid;
     border-width: 3px;
     border-color: #fff;
-    background:url('bg.png');
-    animation:30s scroll infinite linear;
-    width:640px;
-    height:900px;
+    background: url('bg.png');
+    animation: 30s scroll infinite linear;
+    width: 640px;
+    height: 900px;
 }
 
 #animation-dude{
-    background:url('dude-bg.png');
-    width:640px;
-    height:900px;
+    background: url('dude-bg.png');
+    width: 640px;
+    height: 900px;
+}
+
+#animation-gif-layer {
+    width: 180px;
+    height: 330px;
+    background-color: green;
+    border-radius: 180px / 330px;
 }
 
 #animation-dude-mask{
-    background:url('dude-fg.png');
-    width:640px;
-    height:900px;
+    background: url('dude-fg.png');
+    width: 640px;
+    height: 900px;
 }
 
 @keyframes scroll{
-    100%{ background-position:0px -3000px; }
+    100%{ background-position: 0px -3000px; }
 }
 
 #remove-mask {
