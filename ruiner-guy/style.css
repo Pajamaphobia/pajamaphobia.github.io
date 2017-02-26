@@ -46,10 +46,3 @@ body { background-color: #111; }
 @keyframes scroll{
     100%{ background-position: 0px -3000px; }
 }
-
-#remove-mask {
-    position: absolute;
-    bottom: 50;
-    font-size: 20px;
-    color: white;
-}
