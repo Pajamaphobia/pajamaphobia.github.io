@@ -26,6 +26,8 @@ body { background-color: #111; }
     width: 180px;
     height: 330px;
     background-color: green;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 180px / 330px;
 }
 
