@@ -23,12 +23,15 @@ body { background-color: #111; }
 }
 
 #animation-gif-layer {
-    width: 180px;
+    position:absolute;
+    top: 524px;
+    margin-left: 232px;
+    width: 200px;
     height: 330px;
     background-color: green;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 180px / 330px;
+    border-radius: 200px / 330px;
 }
 
 #animation-dude-mask{
