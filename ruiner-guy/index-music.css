@@ -1,0 +1,65 @@
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#music {
+    height: 1px;
+    width: 1px;
+    opacity: 0%;
+}
+
+#container {
+    width: 640px;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #fff;
+}
+
+#animation-bg{
+    background: url('bg.png');
+    animation: 30s scroll infinite linear;
+    width: 640px;
+    height: 900px;
+}
+
+#animation-dude{
+    background: url('dude-bg.png');
+    width: 640px;
+    height: 900px;
+    animation: breath 3s ease-in-out infinite alternate;
+}
+
+#animation-gif-layer {
+    z-index: 2;
+    opacity: .8;
+    position: absolute;
+    top: 514px;
+    margin-left: 232px;
+    width: 200px;
+    height: 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 200px / 330px;
+
+}
+
+#animation-dude-mask{
+    z-index: 3;
+    position: relative;
+    background: url('dude-fg.png');
+    width: 640px;
+    height: 900px;
+}
+
+@keyframes scroll{
+    100%{ background-position: 0px -3000px; }
+}
+
+@keyframes breath {
+    0% { transform: scale(1.0); }
+    100% { transform: scale(1.06); }
+}
