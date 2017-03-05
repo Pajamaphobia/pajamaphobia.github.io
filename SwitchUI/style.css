@@ -1,0 +1,242 @@
+body {
+    background-color: #2a2a2a;
+    color: #fdfdfd;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 30px;
+    display: flex;
+    padding: 30px;
+    overflow: hidden;
+    width: 100vw;
+}
+
+
+.header {
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type=checkbox] {
+  display: none;
+  font-size: 30px;
+}
+
+#system-accounts label {
+	display: inline-block;
+	width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    position: relative;
+    vertical-align: top;
+}
+
+#system-accounts label:before {
+	display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    content: "";
+    border: 2px solid #3eb4fc;
+}
+
+#system-accounts input[type=checkbox]:checked + label:before {
+	display: block;
+    border: 4px solid #3eb4fc;
+}
+
+
+/*
+    System Status Menu (top right)
+*/
+#system-stats {
+    display: flex;
+    align-items: baseline;
+}
+
+#stats-time {
+    font-size: 30px;
+}
+#stats-time:after {
+    font-size: 24px;
+    content: 'pm';
+    padding-right: 20px;
+}
+
+#stats-wifi {
+    position: relative;
+    top: 8px;
+    padding-top: 20px;
+    padding: 4px;
+}
+#stats-wifi {
+	display: inline-block;
+	border: 10px double transparent;
+	border-top-color: currentColor;
+	border-radius: 50%;
+}
+#stats-wifi:after {
+	display: inline-block;
+	border: 8px solid transparent;
+	border-top-color: currentColor;
+	border-radius: 50%;
+    content: '';
+}
+
+
+#stats-battery{
+    padding-left: 30px;
+}
+#battery-icon {
+    display:block;
+}
+#battery-inner {
+    width: 24px;
+    height: 10px;
+    background: #65ff26;
+    position: relative;
+    top: 6px;
+    border: 4px solid #2a2a2a;
+    outline: 2px solid currentColor;
+}
+#battery-positive {
+    width: 4px;
+    height: 6px;
+    background: currentColor;
+    position: relative;
+    top: -6px;
+    left: 34px;
+}
+#battery-charging {
+  width: 0px; 
+  height: 0px; 
+  border: 3px solid transparent; 
+  border-bottom: 15px solid #FEFFFF; 
+  transform: rotateZ(27deg);
+  margin-left: 14px;
+  position: relative;
+  top: -7px;
+}
+#battery-charging-bottom {
+  width: 0px; 
+  height: 0px; 
+  border: 3px solid transparent; 
+  border-top: 15px solid #FEFFFF; 
+  margin-top: 11px; 
+}
+
+#system-games:before {
+    display: block;
+    height: 60px;
+    width: 20px;
+    background-color: #3eb4fc;
+}
+#system-games {
+    padding-left: 30px;
+    padding-top: 80px;
+    font-weight: 300;
+    color: #3eb4fc;
+    font-size: 48px;
+}
+
+#switch-game + label { display: none; }
+#switch-game:checked + label {
+    display: block;
+}
+
+@keyframes text-slide {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+
+
+
+#container > #system-menu {
+    margin-top: 450px;
+
+}
+
+#system-menu {
+    display: flex;
+    justify-content: center;
+}
+
+div[id^="menu-"] {
+    background-color: #3f3f3f;
+    height: 120px;
+    width: 120px;
+    border: 3px solid #252525;
+    border-radius: 100%;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+
+#system-footer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+    
+    font-size: 30px;
+    border-top: 1px solid #fdfdfd;
+    padding-top: 30px;
+    padding-right: 60px;
+    height: 40px;
+}
+
+div[id^="footer-"] { margin-left: 40px; }
+
+#footer-options:before {
+    font-weight: 600;
+    content: '-/+';
+    margin-right: 18px;
+}
+
+#footer-userchange:before {
+    height: 32px;
+    width: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfdfd;
+    border: 1px solid #fdfdfd;
+    border-radius: 100%;
+    color: #2a2a2a;
+    font-weight: 600;
+    font-size: 24px;
+    content: 'Y';
+    margin-right: 18px;
+}
+
+#footer-closesoftware:before {
+    height: 32px;
+    width: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfdfd;
+    border: 1px solid #fdfdfd;
+    border-radius: 100%;
+    color: #2a2a2a;
+    font-weight: 600;
+    font-size: 24px;
+    content: 'X';
+    margin-right: 18px;
+}
+
+#footer-continue:before {
+    height: 32px;
+    width: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fdfdfd;
+    border: 1px solid #fdfdfd;
+    border-radius: 100%;
+    color: #2a2a2a;
+    font-weight: 600;
+    font-size: 24px;
+    content: 'A';
+    margin-right: 18px;
+}
