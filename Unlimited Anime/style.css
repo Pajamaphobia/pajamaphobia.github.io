@@ -9,7 +9,7 @@ body {
     width: 740px;
     height: 700px;
     background-image: url('unlimitedanime.png');
-    animation: anime 1s linear infinite;
+    animation: anime 5s linear infinite;
 }
 
 @keyframes anime {
@@ -18,18 +18,37 @@ body {
   }
 
   1% {
+    width: 1480px; height: 1400px;
     background-size: 1480px 1400px;
-  }
-
-  5% {
-    background-size: 1480px 1400px;
+    transform: rotate(-10deg);
   }
 
   10% {
+    width: 740px; height: 700px;
     background-size: 740px 700px;
+    transform: rotate(10deg);
+  }
+
+  15% {
+    width: 1480px; height: 1400px;
+    background-size: 1480px 1400px;
+    transform: rotate(-10deg);
+  }
+
+  30% {
+    width: 740px; height: 700px;
+    background-size: 740px 700px;
+    transform: rotate(10deg);
+  }
+
+  45% {
+    width: 1480px; height: 1400px;
+    background-size: 1480px 1400px;
+    transform: rotate(-10deg);
   }
 
   to {
+    width: 740px; height: 700px;
     background-size: 740px 700px;
   }
 }
