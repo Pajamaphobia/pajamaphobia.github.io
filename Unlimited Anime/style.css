@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jeffs-zone {
+    width: 740px;
+    height: 700px;
+    background-image: url('unlimitedanime.png');
+    animation: anime 1s linear infinite;
+}
+
+@keyframes anime {
+  from {
+    background-size: 740px 700px;
+  }
+
+  1% {
+    background-size: 1480px 1400px;
+  }
+
+  5% {
+    background-size: 1480px 1400px;
+  }
+
+  10% {
+    background-size: 740px 700px;
+  }
+
+  to {
+    background-size: 740px 700px;
+  }
+}
